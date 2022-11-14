@@ -96,20 +96,22 @@
           class="row my-1 text-center d-flex flex-row justify-content-center"
         >
           <div class="col-10 mb-2 col-lg-5">
-            <div class="align-items-start d-inline-block align-top w-100">
+            <div class="align-items-start d-inline w-100">
               <span class="icon-container d-inline-block">
                 <i class="fas fa-map-marker-alt fa-lg"></i>
               </span>
-              <span class="p-2 d-inline-block info-text">Waialua, Hawaii</span>
+              <span class="d-inline-block info-text"
+                >65-660 Kaukoahua Rd., Waialua, Hawaii</span
+              >
             </div>
           </div>
 
           <div class="col-10 mb-2 col-lg-5">
-            <div class="align-items-start d-inline-block align-top">
+            <div class="align-items-start d-inline w-100">
               <span class="icon-container d-inline-block">
                 <i class="fas fa-envelope fa-lg"></i>
               </span>
-              <span class="p-2 d-inline-block info-text"
+              <span class="d-inline-block info-text"
                 >volunteer@hawaii.sakyadhita.org</span
               >
             </div>
@@ -118,7 +120,18 @@
       </div>
     </div>
 
-    <div class="container mx-auto p-0" id="map"></div>
+    <div class="container mx-auto p-0" id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59371.96661315238!2d-158.11742111562506!3d21.55671013804371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c005ef85fce3cfb%3A0x3d102a415286d9fd!2sPeace%20Center!5e0!3m2!1sen!2sph!4v1668428833061!5m2!1sen!2sph"
+        width="100%"
+        id="map-content"
+        height="100%"
+        style="border: 0"
+        loading="lazy"
+        zoom="14"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
 
     <div class="footer container-fluid p-3">
       <div class="container">
@@ -158,7 +171,8 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script
+    <!-- <script
+      async
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCShqpY9se6lUQ6gzgDLfXlFipKK_9sRNM&callback=initMap"
       defer
     ></script>
@@ -207,11 +221,11 @@
         new google.maps.Marker({
           position: myLatLng,
           map,
-          title: "Hello World!",
+          title: "Sakyadhita Hawai'i",
         });
       }
 
       window.initMap = initMap;
-    </script>
+    </script> -->
   </body>
 </html>
