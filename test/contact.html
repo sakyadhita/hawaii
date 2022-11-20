@@ -119,16 +119,15 @@
         </div>
       </div>
     </div>
-
     <div class="container mx-auto p-0" id="map">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59371.96661315238!2d-158.11742111562506!3d21.55671013804371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c005ef85fce3cfb%3A0x3d102a415286d9fd!2sPeace%20Center!5e0!3m2!1sen!2sph!4v1668428833061!5m2!1sen!2sph"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7422.21980840588!2d-158.09072396774832!3d21.542557485722345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c005ef85fce3cfb%3A0x3d102a415286d9fd!2sPeace%20Center!5e0!3m2!1sen!2sph!4v1668952580901!5m2!1sen!2sph&Iwloc=0"
         width="100%"
         id="map-content"
         height="100%"
         style="border: 0"
         loading="lazy"
-        zoom="14"
+        zoom="20"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
@@ -171,61 +170,10 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- <script
+    <script
       async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCShqpY9se6lUQ6gzgDLfXlFipKK_9sRNM&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByT4qDbMy0OT0KQdnMl7pDqJwzq2BI8rs&callback=initMap"
       defer
     ></script>
-    <script>
-      (function () {
-        "use strict";
-        window.addEventListener(
-          "load",
-          function () {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName("needs-validation");
-
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(
-              forms,
-              function (form) {
-                console.log(form);
-                form.addEventListener(
-                  "submit",
-                  function (event) {
-                    console.log(form.checkValidity());
-                    if (form.checkValidity() === false) {
-                      event.preventDefault();
-                      event.stopPropagation();
-                    }
-                    form.classList.add("was-validated");
-                  },
-                  false
-                );
-              }
-            );
-          },
-          false
-        );
-      })();
-
-      let map;
-
-      function initMap() {
-        const myLatLng = { lat: 21.5713581, lng: -158.1441572 };
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 14,
-          center: myLatLng,
-        });
-
-        new google.maps.Marker({
-          position: myLatLng,
-          map,
-          title: "Sakyadhita Hawai'i",
-        });
-      }
-
-      window.initMap = initMap;
-    </script> -->
   </body>
 </html>
