@@ -1,0 +1,63 @@
+@import url(./utility.css);
+
+#header {
+  background-color: var(--main-color);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 50px 10%;
+}
+.title-color {
+  color: var(--main-color);
+}
+
+.submit-button {
+  background-color: var(--main-color);
+  color: #ffffff !important;
+  width: 75%;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.submit-button:hover {
+  background-color: var(--light-main-color);
+  color: #ffffff;
+}
+
+.icon-container {
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.icon-container i{
+  font-size: 1.5rem;
+}
+#info{
+  background-color:var(--main-color);
+  padding: 1.3rem 1rem;
+  color:var(--light-bg-color);
+  font-size: 1.2rem;
+}
+
+#map {
+  display: block;
+  height: 80vh;
+  width: 100%;
+}
+
+.info-text{
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .submit-button {
+    width: 100%;
+  }
+
+}
