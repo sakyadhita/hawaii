@@ -12,25 +12,6 @@
     text-align:center;
 }
 
-
-#why-volunteer::before {
-    content: "";
-    overflow: hidden;
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: url("../images/icon/img-01.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-
 .double-border {
     border: 3px solid var(--light-bg-color);
     position: relative;
